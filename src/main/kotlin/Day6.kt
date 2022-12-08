@@ -1,7 +1,7 @@
 import java.io.File
 
-class Day6(private val input: String) {
-    fun solve() {
+class Day6(private val input: String) : Solvable {
+    override fun solve() {
         var chars = File(input).readText().windowed(4).withIndex()
 
         for ((i, packet) in chars) {

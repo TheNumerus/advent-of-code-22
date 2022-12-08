@@ -1,0 +1,3 @@
+interface Solvable {
+    fun solve()
+}

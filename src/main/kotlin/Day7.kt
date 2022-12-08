@@ -1,7 +1,7 @@
 import java.io.File
 
-class Day7(private val input: String) {
-    fun solve() {
+class Day7(private val input: String) : Solvable {
+    override fun solve() {
         val log = File(input).readLines()
 
         val root = Dir()

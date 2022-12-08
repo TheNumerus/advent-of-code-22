@@ -1,7 +1,7 @@
 import java.io.File
 
-class Day4(private val input: String) {
-    fun solve() {
+class Day4(private val input: String) : Solvable {
+    override fun solve() {
         var duplicates = File(input).readLines().sumOf {
             val (al, ah, bl, bh) = it.split(',', '-').map { r -> r.toInt() }
 

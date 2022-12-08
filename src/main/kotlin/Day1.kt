@@ -1,7 +1,7 @@
 import java.io.File
 
-class Day1(private val input: String) {
-    fun solve() {
+class Day1(private val input: String) : Solvable {
+    override fun solve() {
         val file = File(this.input)
 
         val elves = mutableListOf(0)

@@ -1,15 +1,15 @@
 import java.io.File
 
-class Day3(private val input: String) {
-    fun solve() {
+class Day3(private val input: String) : Solvable {
+    override fun solve() {
         val lines = File(input).readLines()
 
         var res = lines
             .map { i -> i.chunked(i.length / 2) }
-            .map { (a,b) ->
+            .map { (a, b) ->
                 var res = ' '
                 for (c in a.chars()) {
-                    if (b.contains(c.toChar(),false)) {
+                    if (b.contains(c.toChar(), false)) {
                         res = c.toChar()
                     }
                 }
@@ -27,7 +27,7 @@ class Day3(private val input: String) {
 
         res = lines.chunked(3)
             .map {
-                val (a,b,c) = it
+                val (a, b, c) = it
 
                 var item = ' '
 

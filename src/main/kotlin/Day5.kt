@@ -1,7 +1,7 @@
 import java.io.File
 
-class Day5(private val input: String) {
-    fun solve() {
+class Day5(private val input: String) : Solvable {
+    override fun solve() {
         val (start, actions) = File(input).readText().split("\n\n")
 
         val actionsParsed = parseActions(actions)

@@ -1,6 +1,6 @@
 import java.io.File
 
-class Day2(private val input: String) {
+class Day2(private val input: String) : Solvable {
     private val part1map = listOf(
         listOf(1 + 3, 2 + 6, 3 + 0),
         listOf(1 + 0, 2 + 3, 3 + 6),
@@ -13,7 +13,7 @@ class Day2(private val input: String) {
         listOf(2 + 0, 3 + 3, 1 + 6)
     )
 
-    fun solve() {
+    override fun solve() {
         val lines = File(input).readLines()
 
         var res = lines.sumOf { s ->
