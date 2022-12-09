@@ -9,11 +9,12 @@ val days = mapOf<Int, Solvable>(
     6 to Day6("data/input_6.txt"),
     7 to Day7("data/input_7.txt"),
     8 to Day8("data/input_8.txt"),
+    9 to Day9("data/input_9.txt"),
 )
 
 fun main(args: Array<String>) {
 
-    val day = days[8]
+    val day = days[9]
 
     val time = measureTimeMillis {
         day!!.solve()
